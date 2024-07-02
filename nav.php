@@ -13,7 +13,7 @@
         <div class="onglet">
             <a href="accueil.php">Accueil</a>
             <a href="presentation.php">Qui somme nous ?</a>
-            <a href="config.php">Ajouter etudiant</a>
+            <a href="ajout.php">Ajouter etudiant</a>
             <a href="afficher.php">Afficher etudiant</a>
             <a href="contact.php">Nous contacter</a>
         </div>
