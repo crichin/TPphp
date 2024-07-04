@@ -8,22 +8,21 @@
 </head>
 <body>
     <nav>
-        <img src="" alt="">
-
+        <div class="logo">
+            <img src="logoesgis.jpeg" alt="Logo ESGIS">
+        </div>
         <div class="onglet">
             <a href="accueil.php">Accueil</a>
-            <a href="presentation.php">Qui somme nous ?</a>
-            <a href="ajout.php">Ajouter etudiant</a>
-            <a href="afficher.php">Afficher etudiant</a>
+            <a href="presentation.php">Qui sommes-nous ?</a>
+            <a href="ajout.php">Ajouter étudiant</a>
+            <a href="afficher.php">Afficher étudiant</a>
             <a href="contact.php">Nous contacter</a>
         </div>
-
-        <form action="recherche.php" method="get">
+        <form action="recherche.php" method="get" class="search-form">
             <input type="text" name="query" placeholder="Rechercher..." class="reche">
             <button type="submit" class="rechercher">Rechercher</button>
         </form>
     </nav>
-
-    
+    <!-- Add main content here -->
 </body>
 </html>

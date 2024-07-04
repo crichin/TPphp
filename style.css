@@ -1,3 +1,4 @@
+/* General styles */
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
@@ -5,52 +6,65 @@ body {
     padding: 0;
 }
 
+/* Navigation styles */
 nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    position: sticky;
-    border-bottom: 1px solid #000;
-    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav .onglet a{
+nav .logo img {
+    height: 50px;
+}
+
+nav .onglet {
+    display: flex;
+    align-items: center;
+}
+
+nav .onglet a {
     text-decoration: none;
-    color: #000;
-    margin-right: 9px;
-    margin-left: 4px;
-    transition: .3s;
+    color: #fff;
+    margin-right: 15px;
+    padding: 10px 15px;
+    transition: 0.3s;
 }
 
-nav .onglet a:hover{
-   font-size: 20px;
-   color: red;
+nav .onglet a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
 
-.rechercher{
-    color: aliceblue;
-    background-color: #000;
+nav .search-form {
+    display: flex;
+    align-items: center;
+}
+
+.reche {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.rechercher {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ff6347;
+    color: #fff;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
 
-.reche{
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+.rechercher:hover {
+    background-color: #ff4500;
 }
 
-.rechercher:hover{
-    color: black;
-    background-color:aliceblue;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-}
-
+/* Form styles */
 .formulaire {
     background-color: #fff;
     padding: 20px;
@@ -67,7 +81,7 @@ nav .onglet a:hover{
 }
 
 .formulaire input {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -81,68 +95,21 @@ nav .onglet a:hover{
     background-color: #333;
     color: #fff;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .formulaire button:hover {
-    color: black;
-    background-color:aliceblue;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #333;
 }
 
-.riv a {
-    color: aliceblue;
-    background-color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .3s;
-}
-
-.riv a:hover {
-    color: black;
-    background-color:aliceblue;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-}
-
-
-
-
-/*code pour presentation php */
-    
-<!-- style.css -->
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 0;
-}
-
+/* Presentation styles */
 header {
     background-color: #4CAF50;
     color: white;
     padding: 10px;
     text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #4CAF50;
 }
 
 main {
@@ -180,7 +147,19 @@ ul li {
     border-radius: 5px;
 }
 
+/* Additional styles for links in forms */
+.riv a {
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-
-
-
+.riv a:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
